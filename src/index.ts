@@ -17,9 +17,13 @@ async function startServer() {
 
     app.use(
       cors({
-        origin: ["https://news-rag-frontend-1.onrender.com"],
+        origin: "https://news-rag-frontend-1.onrender.com",
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type"],
       })
     );
+    app.options("*", cors());
+    
     app.use(express.json());
 
     // Routes (services are now initialized)
