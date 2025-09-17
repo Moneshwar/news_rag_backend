@@ -32,7 +32,7 @@ Instructions:
 
 4. If multiple news items are relevant, integrate the content smoothly rather than listing them separately.
 
-5. Include **up to two URLs of the most relevant news articles** in your answer. Use them naturally within the text, e.g., "For more details, see: <URL>".
+5. Include **up to two URLs of the most relevant news articles** in your answer. Use them naturally within the text, e.g., "For more details, see: <URL>" Never wrap the URL in anything space should be there for start and end of the URL.
 
 6. If no directly relevant information is found:
    - Politely acknowledge that you could not find exact news for the query.
