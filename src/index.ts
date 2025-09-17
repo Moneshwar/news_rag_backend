@@ -15,7 +15,12 @@ async function startServer() {
 
     const app: Application = express();
 
-    app.use(cors());
+    app.use(
+      cors({
+        origin: ["https://news-rag-frontend-1.onrender.com"],
+        credentials: true,
+      })
+    );
     app.use(express.json());
 
     // Routes (services are now initialized)
