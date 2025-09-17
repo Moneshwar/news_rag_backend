@@ -18,7 +18,6 @@ async function startServer() {
     app.use(
       cors({
         origin: ["https://news-rag-frontend-1.onrender.com"],
-        credentials: true,
       })
     );
     app.use(express.json());
