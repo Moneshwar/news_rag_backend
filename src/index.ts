@@ -15,13 +15,7 @@ async function startServer() {
 
     const app: Application = express();
 
-    app.use(
-      cors({
-        origin: "https://news-rag-frontend-1.onrender.com",
-        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        allowedHeaders: ["Content-Type"],
-      })
-    );
+    app.use(cors());
     app.options("*", cors());
     
     app.use(express.json());
